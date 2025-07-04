@@ -1,0 +1,98 @@
+body {
+    background: #f4f4f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    min-height: 100vh;
+}
+
+.calcultor {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 24px 16px;
+    width: 320px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    transition: box-shadow 0.2s;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: right;
+    margin-bottom: 16px;
+    min-height: 48px;
+    word-break: break-all;
+    letter-spacing: 1px;
+    font-family: 'Consolas', 'Menlo', 'Monaco', monospace;
+    background: linear-gradient(90deg, #222 80%, #333 100%);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) inset;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 12px
+}
+
+.btn {
+    padding: 18px 0;
+    font-size: 2.2rem;
+    border: none;
+    border-radius: 8px;
+    background: #e0e1e6;
+    color: #222;
+    cursor: pointer;
+    transition: background 0.2s
+}
+
+.btn:hover{
+    background: #bfc0c5;
+}
+
+.btn[data-action="add"],
+.btn[data-action="subtract"],
+.btn[data-action="multiply"],
+.btn[data-action="divide"] {
+    background: #2196f3;
+    color: #fff;
+}
+
+.btn[data-action="add"]:hover,
+.btn[data-action="subtract"]:hover,
+.btn[data-action="multiply"]:hover,
+.btn[data-action="divide"]:hover {
+  background: #1565c0;
+}
+
+.btn[data-action="clear"],
+.btn[data-action="backspace"] {
+  background: #f44336;
+  color: #fff;
+}
+
+.btn[data-action="clear"]:hover,
+.btn[data-action="backspace"]:hover {
+  background: #b71c1c;
+}
+
+.btn[data-action="equals"] {
+    background: #4caf50;
+    color: #fff;
+    grid-row: span 2;
+    font-size: 1.5rem;
+}
+  
+.btn[data-number="0"] {
+    grid-column: span 2;
+}
+
+.btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
