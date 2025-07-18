@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+
+    <!-- Ô nhập và nút thêm việc -->
+    <input type="text" id="newTodo" placeholder="Nhập việc cần làm" />
+    <button id="addBtn">Thêm</button>
+
+    <!-- Danh sách việc -->
+    <ul id="todoList"></ul>
+
+    <!-- Thống kê việc chưa hoàn thành -->
+    <p id="todoCount">0 việc chưa hoàn thành</p>
+
+    <!-- Các nút lọc -->
+    <div>
+      <button data-filter="all">Tất cả</button>
+      <button data-filter="active">Đang hoạt động</button>
+      <button data-filter="completed">Đã hoàn thành</button>
+    </div>
+
+    <!-- Script riêng -->
+    <script src="./script.js"></script>
+  </body>
+</html>

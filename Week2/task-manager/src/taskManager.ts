@@ -3,7 +3,7 @@ import { Task, Priority, Status } from "./interface";
 import { promises as fs } from "fs";
 import * as readline from "readline";
 
-const FileData = "../tasks.json";
+const FileData = "Week2\\task-manager\\tasks.json";
 
 // Bộ nhớ chứa task
 let globalTasks: Task[] = [];
